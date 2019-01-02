@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--登录成功页面布局-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginsuccess_fragment"
+    ></FrameLayout>
+    <RadioGroup
+
+        android:background="#ffffff"
+        android:id="@+id/loginsuccess_change_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:checked="true"
+            android:button="@null"
+            android:id="@+id/loginsuccess_rb_film"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/select_loginsuccess_film"
+            android:layout_height="@dimen/dp_70" />
+
+        <RadioButton
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:button="@null"
+            android:id="@+id/loginsuccess_rb_cinema"
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_70"
+            android:drawableTop="@drawable/select_loginsuccess_cinema"
+            />
+
+        <RadioButton
+
+            android:id="@+id/loginsuccess_rb_my"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_70"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/select_loginsuccess_my"
+            android:button="@null" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>
